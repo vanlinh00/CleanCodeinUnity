@@ -12,19 +12,7 @@ public class ExplosiveBarrel : MonoBehaviour, IDamageable
 
     public void Damage(float damgeAmount)
     {
-        // throw new System.NotImplementedException();
         Debug.Log(" ExplosiveBarrel - " + damgeAmount);
     }
 
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
