@@ -17,7 +17,7 @@ public class CubeSpawner : MonoBehaviour
     {
         objectPooler = ObjectPooler.Instance;
 
-
+        SpawnerObject();
     }
     private void FixedUpdate()
     {
@@ -25,8 +25,8 @@ public class CubeSpawner : MonoBehaviour
     }
     public void SpawnerObject()
     {
-        //  for (int i = 0; i < 150; i++)
-        objectPooler.SpawnFromPool("Cube", transform.position, Quaternion.identity);
+        for (int i = 0; i < 1500; i++)
+            objectPooler.SpawnFromPool("Cube", transform.position, Quaternion.identity);
     }
 
 }
